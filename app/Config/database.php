@@ -59,9 +59,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'Utilisateur',
-		'password' => 'MotDePasse',
-		'database' => 'BaseDeDonnee',
+		'login' => 'root',
+		'password' => 'hcyzq3b9',
+		'database' => 'cakeTest',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);

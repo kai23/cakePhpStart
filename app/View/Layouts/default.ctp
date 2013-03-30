@@ -10,7 +10,10 @@
 	<?php echo $this->Html->meta('icon'); ?>
 	
 	<!-- Les CSS -->
-	<?php echo $this->Html->css(array('jquery-ui', 'bootstrap')); ?>
+	<?php echo $this->Html->css(array('bootstrap', "http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css")); ?>
+
+	<!-- Le JS -->
+	<?php echo $this->Html->script(array('jquery.min','jquery-ui.min','bootstrap.min')); ?>
 </head>
 <body>
 		<header>
@@ -26,7 +29,7 @@
 			</div>
 		</header>
 
-		<div id="content">
+		<div class="container">
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $this->fetch('content'); ?>
 		</div>
@@ -34,8 +37,7 @@
 
 		</footer>
 
-	<!-- Le JS -->
-	<?php echo $this->Html->script(array('jquery.min','jquery-ui.min','bootstrap.min')); ?>
+	
 
 
 	<!-- Le reste qui n'est pas géré par moi mais pas debugKit	-->
